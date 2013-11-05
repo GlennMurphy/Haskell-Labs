@@ -54,7 +54,6 @@ myMinimum (x:xs)
 			
 myElem :: Eq a => a -> [a] -> Bool
 myElem a [] = False
-myElem a [x] = a == x
 myElem a (x:xs)
 			| a == x = a == x
 			| otherwise = myElem a xs
